@@ -33,11 +33,7 @@ Ubuntu
 ```
 sudo apt install nvidia-container-runtime
 ```
-You must have sudo access for this to work, it also attempts
-to see if you have the necessary dependencies.
-```
-./nvidia_docker_setup.sh
-```
+
 ### Running
 
 Starting
