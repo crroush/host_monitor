@@ -1,6 +1,8 @@
 # System Monitoring Tools
 
-This project provides a fully containerized way to monitor system statistics that are collected by collectd.
+This project provides a monitoring utility for saving host information.  
+Not all the features are always available on the devices, so you can customize the stack accordingly.  
+The intention is this runs on a host completely self contained. 
 
 Grafana/InfluxDB and Telegraf are fully encapsulated
 
@@ -18,6 +20,7 @@ Grafana provides visualization tools for monitoring data
    * [Prerequisites](#prerequisites)
    * [Running](#running)
    * [Debugging](#debugging)
+   * [Dashboards](#dashboards)
 
 ### Prerequisites
 * Linux: Tested on Ubuntu 22.04
@@ -67,3 +70,8 @@ If you want to "start over":
 sudo rm -rf /srv/docker/grafana
 sudo rm -rf /srv/docker/influxdb
 ```
+### Dashboards
+![image](https://user-images.githubusercontent.com/9982203/224446250-f2bea84d-0738-4662-a2d5-5f7daf646c3c.png)
+
+![image](https://user-images.githubusercontent.com/9982203/224446823-bddcf233-51f7-4745-85b5-0d20d63881be.png)
+
