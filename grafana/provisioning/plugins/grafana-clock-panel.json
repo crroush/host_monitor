@@ -1,0 +1,112 @@
+{
+  "id": "grafana-clock-panel",
+  "type": "panel",
+  "url": "https://github.com/grafana/clock-panel",
+  "status": 1,
+  "versions": [
+    {
+      "version": "1.0.3",
+      "commit": "bb466d0682d58af659b018748d53c0d3b69a8377",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "1.0.2",
+      "commit": "6fdc3d5ba85c98e2b91d644badea4c4d04231c2f",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "1.0.1",
+      "commit": "64ea7d1e071d11caaf2276f1b21692eafe11002c",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "1.0.0",
+      "commit": "4db343717947e3097820ddd765b01e125155c305",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "0.1.0",
+      "commit": "ac968f776cb3b5b611c76cb7eb0a54706cd34867",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "0.0.9",
+      "commit": "c5b3c7f266bcb96168b3f280d266cde709a31a70",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "0.0.8",
+      "commit": "28e5d59e3db02952e6394d5327045845742796c4",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "0.0.7",
+      "commit": "f03820b640abe2f220ff31bcd384a06beda6f808",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "0.0.6",
+      "commit": "47ba362d8bd3696c93c4ac65ca28b0a9eb26906e",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "0.0.5",
+      "commit": "0905e4aa4991b5af9e6c3738fe7771c8f02a2362",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "0.0.3",
+      "commit": "2492bfe2cb26c2db189b9dcad8882cac22142f95",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "0.0.2",
+      "commit": "0a40148489cd58245302db714638be99f0439eed",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    },
+    {
+      "version": "0.0.1",
+      "commit": "21b57d5435cf4791fd16e534001220036f303d83",
+      "url": "https://github.com/grafana/clock-panel",
+      "verified": false,
+      "status": 1,
+      "grafanaDependency": null
+    }
+  ]
+}

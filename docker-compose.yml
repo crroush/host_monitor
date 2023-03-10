@@ -1,0 +1,64 @@
+version: "3.6"
+services:
+   influxdb:
+      image: influxdb:1.8
+      container_name: influxdb
+      ports:
+        - "8083:8083"
+        - "8086:8086"
+        - "8096:8096/udp"
+        - "8090:8090"
+      env_file:
+        - 'env.influxdb'
+      volumes:
+        - /srv/docker/influxdb/data:/var/lib/influxdb
+        - static-content:/usr/share/collectd/
+   grafana:
+      image: grafana/grafana:8.2.6
+      container_name: grafana-sysstats
+      depends_on:
+        - influxdb
+      ports:
+        - "3000:3000"
+      env_file:
+        - 'env.grafana'
+      user: "0"
+      links:
+        - influxdb
+      volumes:
+        - /srv/docker/grafana/data:/var/lib/grafana
+        - ./grafana/provisioning/:/etc/grafana/provisioning
+
+   telegraf-gpu:
+      build: telegraf-gpu
+      container_name: telegraf-gpu-systats
+      entrypoint: ["sh", "/etc/telegraf_entrypoint.sh"]
+      deploy:
+        resources:
+          reservations:
+            devices:
+              - driver: nvidia
+                capabilities: [gpu]
+      links:
+        - influxdb
+      depends_on:
+        - influxdb
+      privileged: true
+      environment:
+        #NVIDIA_VISIBLE_DEVICES: all
+        #NVIDIA_DRIVER_CAPABILITIES: all
+         HOST_ETC: /hostfs/etc
+         HOST_PROC: /hostfs/proc
+         HOST_SYS: /hostfs/sys
+         HOST_VAR: /hostfs/var
+         HOST_RUN: /hostfs/run
+         HOST_MOUNT_PREFIX: /hostfs
+      volumes:
+        - ./telegraf_entrypoint.sh:/etc/telegraf_entrypoint.sh:ro
+        - ./configs/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+        - /:/hostfs:ro
+
+
+volumes:
+   static-content:
+
