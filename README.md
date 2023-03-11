@@ -1,5 +1,6 @@
 # System Monitoring Tools
 WARNING: This is not tested with a computer that does not have a GPU.  telegraf may fail to launch due to the configuration.
+
 This project provides a monitoring utility for saving host information.  
 Not all the features are always available on the devices, so you can customize the stack accordingly.  
 The intention is this runs on a host completely self contained. 
