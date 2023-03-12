@@ -31,7 +31,7 @@ services:
 
    telegraf-gpu:
       build: telegraf-gpu
-      container_name: telegraf-gpu-systats
+      container_name: telegraf-gpu-sysstats
       entrypoint: ["sh", "/etc/telegraf_entrypoint.sh"]
       deploy:
         resources:
