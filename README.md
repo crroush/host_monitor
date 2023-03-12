@@ -62,9 +62,9 @@ http://localhost:8086
 Checking the logs
 
 ```
-docker container logs grafana  -f
-docker container logs influxdb -f
-docker container logs telegraf -f
+docker container logs grafana-sysstats -f
+docker container logs influxdb-sysstats -f
+docker container logs telegraf-gpu-sysstats -f
 ```
 If you want to "start over":
 ```
